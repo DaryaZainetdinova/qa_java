@@ -11,19 +11,19 @@ import org.mockito.junit.MockitoJUnitRunner;
 public class FelineTest {
     @Test
     public void checkGetFamily() {
-        Feline bagira = new Feline();
-        assertEquals("Кошачьи", bagira.getFamily());
+        Feline feline = new Feline();
+        assertEquals("Кошачьи", feline.getFamily());
     }
 
     @Test
     public void checkKittensCount() {
-        Feline bagira = new Feline();
-        assertEquals(1, bagira.getKittens());
+        Feline feline = new Feline();
+        assertEquals(1, feline.getKittens());
     }
 
     @Test
     public void checkFoodCount() throws Exception {
-        Feline bagira = new Feline();
-        assertEquals(3, bagira.eatMeat().size());
+        Feline feline = new Feline();
+        assertEquals(3, feline.eatMeat().size());
     }
 }
