@@ -49,14 +49,8 @@ public class LionTest {
 
     @Test
     public void checkUnexpectedGender() {
-        boolean thrown = false;
-
-        try {
-            Lion leo = new Lion("Транс", this.feline);
-        } catch (Exception e) {
-            thrown = true;
-        }
-
-        assertTrue(thrown);
+        assertThrows(Exception.class, () -> {
+            Lion leo = new Lion("сам", this.feline);
+        });
     }
 }
